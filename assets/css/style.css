@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    font-size: 24px;
+    font-family: monospace, sans-serif, 'Times New Roman', Times, serif;
+    border-color:#391e17;
+}
+
+body{
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: #884A39;
+    border-style: solid;
+    color: #F9E0BB;
+}
+
+h1{
+    font-size: 200%;
+}
+
+h2{
+    font-size: 150%;
+}
+h3{
+    font-size: 105%;
+}
+
+h4{
+    font-size: 90%;
+}
+
+p{
+    font-size: 100%;
+}
+
+article{
+    margin: 5% 5% 5% 5%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+header a{
+    color: #F9E0BB;
+    text-decoration: none;
+}
+
+/* changes the color of the text when you hover over it */
+header a:hover{
+    cursor: pointer;
+    color: #FFC26F;
+}
+
+/* changes the color of the underline when you hover over it */
+header li:hover{
+    text-decoration-color: #FFC26F;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+/* Changes the color of the text when you hover over it */
+footer a:hover{
+    cursor: pointer;
+    color: #884A39;
+}
+
+/* changes the color of the under line when you hover over it */
+footer li:hover{
+    text-decoration-color: #884A39;
+}
+
+/* changes the color of the border when you hover over the image */
+.project-picture:hover, #first-project-picture:hover{
+    border-color: #FFC26F;
+}
+
+.a-container{
+    width: 50%;
+    position: relative;
+}
+
+.inline-li{
+    /*gets rid of the bullet points and aranges the list items horizontally*/
+    display: inline;
+    text-decoration: underline;
+    font-size: 90%;
+}
+
+.about-me-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.my-work-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto 0 auto auto;
+    justify-content: right;
+}
+
+/*Puts text on the bottom right of the image*/
+.project-name-right{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/*Puts text on the bottom left of the image*/
+.project-name-left{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.project-picture{
+    width: 100%;
+    border-style: solid;
+}
+
+.project-margin-right{
+    margin-right: .5px;
+    margin-top: 1px
+}
+
+.project-margin-left{
+    margin-left: .5px;
+    margin-top: 1px;
+}
+
+.smaller-project{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.contact-info-ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 1% 1% 1% 1%;
+}
+
+.divider-container{
+    display: flex;
+    width: auto;
+    justify-content: right;
+}
+
+.divider{
+    width: 70%;
+    height:.25em;
+    background-color: #884A39;
+    margin: 2em 0 2em 2em;
+    border-radius: 10px;
+}
+
+#portrait{
+    height: 30%;
+    max-width: 30%;
+    margin: 5% 5% 5% 5%;
+    border-style: solid;
+}
+
+#row-1-project{
+    position: relative;
+}
+
+#first-project-picture{
+    width: 100%;
+    border-style: solid;
+}
+
+#under-construction{
+    display: flex;
+    justify-content: center;
+}
+
+#under-construction::before{
+    display: inline-block;
+    content: "\1F6A7";
+}
+
+#under-construction::after{
+    display: inline-block;
+    content: "\1F6A7";
+}
+
+@media screen and (max-width: 992px) {
+    /*makes the font size smaller for all attributes when the 
+    screen size is 992px or smaller*/
+    *{
+        font-size: 20px;
+    }
+        /*makes the font size smaller for h3 and h4 elements when the 
+    screen size is 992px or smaller*/
+    h3{
+        font-size: 18px;
+    }
+    h4{
+        font-size: 16px;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+    /*makes the font sizes even smaller for all attributes when the screen size
+    is 768px or under*/
+    *{
+        font-size: 16px;
+    }
+    /*Sets all the header elements to show in a column when the
+    screen size is 768px or smaller*/
+    header{
+        flex-direction: column;
+    }
+    /*makes the font sizes even smaller for the h4 elements when the screen size
+    is 768px or under*/
+    h3{
+        font-size: 12px;
+    }
+    h4{
+        font-size: 10px;
+    }
+
+}
